@@ -1,4 +1,4 @@
-// Написать функцию, которая найдет и выведет в консоль юзеров, зарегистрированных 09.10.2021 и 10.10.2021).
+// Write a function that will find and display in the console the users registered on 09.10.2021 and 10.10.2021).
 
 const users = [
     {
