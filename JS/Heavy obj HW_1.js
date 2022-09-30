@@ -12,8 +12,7 @@ if (age_1 < age_2) {
     console.log("Technical work");
 }
 
-// *1
-// Преобразовать написанный выше код в функцию, принимающую на вход возвраст.
+// *1 Convert the code written above into a function that takes age as input.
 
 if (age < age_2) {
         console.log("You don't have access, cause your age is " + age + ". It's less then " + age_2);
@@ -52,8 +51,7 @@ checkAge(18)
 checkAge(61)
 checkAge('Hello')
 
-// *3
-// Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежат ТОЛЬКО ЦИФРЫ) пропускались, преобразовываясь в number
+// *3  Convert 2* so that the value '2' (the string with ONLY digits in it) is skipped and converted to number
 
 const checkAge = function (age) {
 
@@ -79,8 +77,7 @@ checkAge(61)
 checkAge('25')
 checkAge('Hello 25')
 
-// *4
-// Преобразовать задание 3* таким образом, чтобы возвраст вводился используя функцию prompt в привязанной вёрстке 
+// *4 Convert job 3* so that age is entered using the prompt function in the linked layout 
 
 const checkAge = function (age) {
 
