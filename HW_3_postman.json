@@ -30,7 +30,7 @@
 							"})\r",
 							"\r",
 							"// Check the correctness of the formulas for calculating the answer using an array of data\r",
-							"const count = ['', 3.3, 2.7, 3.8, 2, 1],
+							"const count = ['', 3.3, 2.7, 3.8, 2, 1]\r",
 							"\r",
 							"count.forEach((item, i) => {\r",
 							"    if (arr[i] != \"person\")
