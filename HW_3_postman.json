@@ -33,7 +33,7 @@
 							"const count = ['', 3.3, 2.7, 3.8, 2, 1]\r",
 							"\r",
 							"count.forEach((item, i) => {\r",
-							"    if (arr[i] != \"person\")
+							"    if (arr[i] != \"person\")\r".
 							"    pm.test(`${resp[arr[i]]} == ${+req.salary} * ${item}`, function() {\r",
 							"        pm.expect(resp[arr[i]]).to.eql(+req.salary * item)\r",
 							"    })\r",
