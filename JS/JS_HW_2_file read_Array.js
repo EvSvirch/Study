@@ -20,3 +20,17 @@ function person (person) {
 }
 
 person(personFile)
+
+
+// Option 2
+const fs = require('fs')                    
+let file = fs.readFileSync('JS_HW_2_Array.json')    
+let personFile = JSON.parse(file)           
+
+
+let strArr = personFile.map(item => JSON.stringify(item))   
+let setArr = new Set(strArr)    
+let Arr = Array.from(setArr)   
+let resJSON = Arr.map(item => JSON.parse(item))  
+//let resJSON = Array.from(new Set(personFile.map(item => JSON.stringify(item)))).map(item => JSON.parse(item)) // same in one line
+console.log(resJSON)
