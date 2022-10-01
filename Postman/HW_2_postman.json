@@ -75,7 +75,7 @@
 							"\r",
 							"// Check that age in the answer equals age s request (enter age manually)\r",
 							"pm.test(\"Ex.5 - age\", function () {\r",
-							"    pm.expect(\"35\").to.eql(jsonData.age);\r",
+							"    pm.expect(\"23\").to.eql(jsonData.age);\r",
 							"});\r",
 							"\r",
 							"// Check that salary in the answer equals salary s request (enter salary manually)\r",
@@ -126,7 +126,7 @@
 						},
 						{
 							"key": "age",
-							"value": "35",
+							"value": "23",
 							"type": "text"
 						},
 						{
@@ -236,7 +236,7 @@
 						},
 						{
 							"key": "age",
-							"value": "35"
+							"value": "23"
 						},
 						{
 							"key": "salary",
@@ -340,7 +340,7 @@
 						},
 						{
 							"key": "age",
-							"value": "35"
+							"value": "23"
 						},
 						{
 							"key": "salary",
