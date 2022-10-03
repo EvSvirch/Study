@@ -1,4 +1,4 @@
-1. На локальном репозитории сделать ветки для:
+1. On a local repository, make branches for:
 - Postman
 - Jmeter
 - CheckLists
@@ -17,8 +17,8 @@
   git branch Mobile_testing
 
 
-2. Запушить все ветки на внешний репозиторий   ----   git push --all
-3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+2. Push all branches to an external repository ---- git push --all
+3. In the Bag Reports branch, make a text document with the bug report structure
 	git checkout Bag_Reports
 	nano bag_report.txt
 	id:
@@ -30,34 +30,34 @@
 	severity:
 	priority:
 	notes:
-	сохраняем
-4. Запушить структуру багрепорта на внешний репозиторий
+	save
+4. Run the bug report structure on an external repository
 	git add .
 	git commit -m "ex.4 bag report"
 	git push
-5. Вмержить ветку Bag Reports в Main   -----   git merge Bag_Reports
+5. Merge the Bag Reports branch into Main ----- git merge Bag_Reports
 
-6. Запушить main на внешний репозиторий.  -----  git push
-7. В ветке CheckLists набросать структуру чек листа.
+6. Run main to an external repository.  ----- git push
+7. In the CheckLists branch, sketch out the checklist structure.
 	git checkout CheckLists
-	nano CheckList
-                                | Результат | Комментарий
-Интерфейс:                      |           |
-расположение элемента_1         |           |
-расположение элемента_2         |           |
-цвет элемента_1                 |           |
-цвет элемента_2                 |           |
-орфография                      |           |
-                                |           |
-Логика:                         |           |
-элемент_1 отрабатывает сценарий |           |
-элемент_2 отрабатывает сценарий |           |
+	nano CheckList.
+                                | Result | Comment
+Interface: |
+item_1 location |
+item_2 location | |
+| item color |
+item color_2 |
+| orthography |
+                                | |
+Logic: |
+element_1 runs the script |
+element_2 works out the scenario |
 
-8. Запушить структуру на внешний репозиторий
+8. Run the structure on an external repository
 	git add .
 	git commit -m "ex.8 add checklist"
 	git push -u origin
-9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
-10. Синхронизировать Внешнюю и Локальную ветки Main
+9. On the external repository, do a Pull Request of the CheckLists branch in the main
+10. Synchronize Main's External and Local branches
 	git checkout main
 	git pull
