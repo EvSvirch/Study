@@ -1,55 +1,55 @@
-1) Посмотреть где я ----- pwd
+1) See where I ----- pwd
 
-2) Создать папку ----- mkdir fold1
+2) Create a folder ----- mkdir fold1
 
-3) Зайти в папку ----- cd fold1
+3) Go to ----- cd fold1
 
-4) Создать 3 папки ----- mkdir fold1 fold2 fold3
+4) Create 3 folders ----- mkdir fold1 fold2 fold3
 
-5) Зайти в любоую папку ----- cd fold1 , если нужно войти независимо от предыдущих заданий, то пишем полный путь cd c:/путь; на линуксе вроде так - cd /путь
+5) Go to any folder ----- cd fold1 , if you want to enter regardless of the previous tasks, then write the full path cd c:/path; on linux it seems so - cd /path
 
-6) Создать 5 файлов (3 txt, 2 json) ----- touch 1.txt 2.txt 3.txt 1.json 2.json
+6) Create 5 files (3 txt, 2 json) ----- touch 1.txt 2.txt 3.txt 1.json 2.json
 
-7) Создать 3 папки ----- mkdir fold1 fold2 fold3
+7) Create 3 folders ----- mkdir fold1 fold2 fold3
 
-8. Вывести список содержимого папки ----- ls -la
+8. List the contents of the folder ----- ls -la
 
-9) + Открыть любой txt файл ----- cat > 1.txt , если просто прочитать cat 1.txt (или редактор vin 1.txt , есть более удобный редакор nano 1.txt)
+9) + Open any file ----- cat > 1.txt if just read cat 1.txt (or editor vin 1.txt, there is more convenient editor nano 1.txt)
 
-10) + написать туда что-нибудь, любой текст. ----- Hello (писать через Enter)
+10) + write something there, any text. ----- Hello (type via Enter)
 
-11) + сохранить и выйти. ----- Ctrl+d
+11) + save and exit. ----- Ctrl+d
 
-12) Выйти из папки на уровень выше ----- cd ..
+12) Exit the folder above ----- cd .
 -
 
-13) переместить любые 2 файла, которые вы создали, в любую другую папку. ----- mv {1.txt,1.json} ../fold2
+13) Move any 2 files you created to any other folder. ----- mv {1.txt,1.json} ../fold2
 
-14) скопировать любые 2 файла, которые вы создали, в любую другую папку. ----- cp {2.txt,2.json} ../fold3
+14) copy any 2 files you created to any other folder. ----- cp {2.txt,2.json} ../fold3
 
-15) Найти файл по имени ----- find ../ -iname 2.txt
+15) Find the file by name ----- find ../ -iname 2.txt
 
-16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
-	изучил команду со стороны поиска по тегу:
-				grep -RIni "Hello" - поиск в файле
-				history | grep 1.txt - поиск по истории по тегу
-				curl --help all | grep GET - поиск в документации по тегу GET
-	содержимое в реальном времени смотрел через tail -f 1.txt
-17) вывести несколько первых строк из текстового файла ----- head -3 1.txt
+16) View the contents in real time (grep command) study how it works.
+	studied the command from the tag search side:
+				grep -RIni "Hello" - search the file
+				history | grep 1.txt - search history by tag
+				curl --help all | grep GET - search the documentation for the GET tag
+	I was watching the realtime content with tail -f 1.txt
+17) output the first few lines of the text file ----- head -3 1.txt
 
-18) вывести несколько последних строк из текстового файла ----- tail -3 1.txt
+18) output a few last lines from the text file ----- tail -3 1.txt
 
-19) просмотреть содержимое длинного файла (команда less) изучите как она работает. ----- изучил навигацию
+19) view the contents of a long file (less command) study how it works. ----- study navigation
 
-20) вывести дату и время ----- date, можно красивее: date +"%d %B %Y, %A, Time: %H:%M"
+20) print date and time ----- date, you can make it more beautiful: date + "%d %B %Y, %A, Time: %H:%M"
 
-Задание *
-1) Отправить http запрос на сервер http://162.55.220.72:5005/terminal-hw-request ----- curl -G "http://162.55.220.72:5005/terminal-hw-request потом http://162.55.220.72:5005/get_method?name=Pronya&age=35"
+Task *
+1) Send http request to the server http://162.55.220.72:5005/terminal-hw-request ----- curl -G "http://162.55.220.72:5005/terminal-hw-request then http://162.55.220.72:5005/get_method?name=Pronya&age=35"
 
-2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13:
-	создать файл - touch skript.sh
-	открыть в редакторе - nano skript.sh и сохранить
-	скрипт:
+2) Write a script that will automatically perform items 3, 4, 5, 6, 7, 8, 13:
+	create a file - touch skript.sh
+	open in the editor - nano skript.sh and save
+	script:
 cd c:/GitBash/skript
 mkdir dir1 dir2 dir3
 cd dir1
@@ -57,4 +57,4 @@ touch 1.txt 2.txt 3.txt 1.json 2.json
 mkdir fold1 fold2 fold3
 ls -la
 mv {1.txt,1.json} ../dir2
-	запустить скрипт bash skript.sh
+	run the bash skript.sh
